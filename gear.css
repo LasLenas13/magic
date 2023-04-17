@@ -1,11 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2b01e;
+    background-image: url("https://cdn5.vectorstock.com/i/1000x1000/62/44/black-and-red-checkered-background-vector-19586244.jpg");
     margin: 0;
     padding: 0;
   }
 h1 {
     font-size: 4rem;
+    color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
@@ -17,7 +19,7 @@ h1 {
   }
   
 .card {
-    background-color: #93c876;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px;
