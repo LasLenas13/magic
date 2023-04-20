@@ -22,9 +22,11 @@ const answers = [
 
 const ball = document.querySelector('.ball');
 const answerEl = document.querySelector('#answer');
+const shakingSound = new Audio('shaking-sound.mp3');
 
 function shakeBall() {
   ball.classList.add('shake-animation');
+  shakingSound.play();
   setTimeout(() => {
     const randomIndex = Math.floor(Math.random() * answers.length);
     answerEl.textContent = answers[randomIndex];
@@ -32,6 +34,9 @@ function shakeBall() {
   }, 2000);
 }
 
+// Preload the shaking sound
+shakingSound.preload = 'auto';
+
 document.querySelector('#shake-btn').addEventListener('click', shakeBall);
 
-  
+
